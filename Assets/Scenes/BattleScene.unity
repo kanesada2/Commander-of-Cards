@@ -903,6 +903,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3763691281967005241, guid: 092eb2a9d8e97504a8e7be578022e1f9, type: 3}
   m_PrefabInstance: {fileID: 382402413}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &382402415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 283137898749901905, guid: 092eb2a9d8e97504a8e7be578022e1f9, type: 3}
+  m_PrefabInstance: {fileID: 382402413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &382402416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382402415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b142aaac97fb494490b92ad27f5588e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,7 +1155,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 684726562}
   m_HandleRect: {fileID: 2000579107}
   m_Direction: 2
   m_Value: 1
@@ -1218,7 +1235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -90.024994, y: -125}
+  m_AnchoredPosition: {x: -90.02539, y: -125}
   m_SizeDelta: {x: -179.95001, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &823963060
@@ -1706,7 +1723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -209.975, y: 547.5}
+  m_AnchoredPosition: {x: -209.97461, y: 547.5}
   m_SizeDelta: {x: -420.05, y: -55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031279026
@@ -2351,7 +2368,7 @@ GameObject:
   - component: {fileID: 1625091644}
   - component: {fileID: 1625091643}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2641,6 +2658,8 @@ GameObject:
   - component: {fileID: 1913740710}
   - component: {fileID: 1913740712}
   - component: {fileID: 1913740711}
+  - component: {fileID: 1913740714}
+  - component: {fileID: 1913740713}
   m_Layer: 5
   m_Name: BattleBoard
   m_TagString: Untagged
@@ -2714,6 +2733,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913740709}
   m_CullTransparentMesh: 0
+--- !u!114 &1913740713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913740709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e607d2e24554fe47b665ece333bcd12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1913740714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913740709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c6619f4b42683841b1245befa8bd499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _phase: {fileID: 0}
 --- !u!1 &1977654891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,7 +2810,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 720, y: 1280}
-  m_ScreenMatchMode: 1
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
